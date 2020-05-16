@@ -7,9 +7,8 @@
     {
       "debug": true,
       "targets": [
-        "last 2 chrome version",
-        "last 2 firefox version",
-        "last 2 ios version"
+        "> 0.3%",
+        "not ie > 0"
       ]
     }
   ]]
