@@ -12,6 +12,10 @@
   },
   "author": "Nastia Nosevich",
   "license": "ISC",
+  "browserslist": [
+    "last 2 chrome versions",
+    "last 2 firefox versions"
+  ],
   "bugs": {
     "url": "https://github.com/Anastasya1701/Castom-Build-Sandbox/issues"
   },
