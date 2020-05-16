@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "@babel/plugin-proposal-class-properties"
+  ],
+  "presets": [[
+    "@babel/env",
+    {
+      "debug": true,
+      "targets": [
+        "last 2 chrome version",
+        "last 2 firefox version",
+        "last 2 ios version"
+      ]
+    }
+  ]]
+}
