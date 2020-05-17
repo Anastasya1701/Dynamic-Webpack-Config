@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {  // the same like import in node.js
     mode: "development",
@@ -60,10 +60,17 @@ module.exports = {  // the same like import in node.js
 
     plugins: [
         new HtmlWebpackPlugin({
+            filename: "index.html",
             title: "Webpack by https://github.com/Anastasya1701 Configuration",
             buildTime: new Date().toISOString(),
             template: 'public/index.html'
         }),
-        new MiniCssExtractPlugin({})
-    ]
+        new MiniCssExtractPlugin({
+            filename: 'style-[hash:8].css'
+        })
+    ],
+
+    devServer: {
+        open: true,
+    }
 }
