@@ -1,16 +1,9 @@
-"use strict";
-
-require("core-js/modules/es.array.flat");
-
-require("core-js/modules/es.array.unscopables.flat");
-
-require("core-js/modules/es.object.to-string");
-
-require("core-js/modules/es.promise");
-
-require("core-js/modules/es.promise.finally");
-
-require("regenerator-runtime/runtime");
+import "core-js/modules/es.array.flat";
+import "core-js/modules/es.array.unscopables.flat";
+import "core-js/modules/es.object.to-string";
+import "core-js/modules/es.promise";
+import "core-js/modules/es.promise.finally";
+import "regenerator-runtime/runtime";
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
@@ -20,8 +13,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 var App = function App() {
-  _classCallCheck(this, App);
+  return /*#__PURE__*/React.createElement("div", null, "HEY");
+};
+
+ReactDOM.render( /*#__PURE__*/React.createElement(App, null), document.getElementById('root'));
+
+var Perfomance = function Perfomance() {
+  _classCallCheck(this, Perfomance);
 
   _defineProperty(this, "run", /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
     var state;
@@ -42,7 +44,7 @@ var App = function App() {
   })));
 };
 
-var app = new App();
+var app = new Perfomance();
 app.run().then(function () {}).finally(function () {
   return console.log('done');
 }); // download core-js library for adding polyfills for new features, add it in .babelrc

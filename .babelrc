@@ -6,10 +6,12 @@
     "@babel/env",
     {
       "corejs": 3,
+      "modules": false,
       "useBuiltIns": "usage",
       "debug": true
     }
-  ]]
+  ],
+    "@babel/react"]
 }
 
 
